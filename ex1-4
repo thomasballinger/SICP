@@ -1,0 +1,2 @@
+(define (a-plus-abs-b a b) ((if (> b 0) + -) a b))
+;a function is being chosen by a conditional to be applied to a and b

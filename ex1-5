@@ -1,0 +1,11 @@
+;different model of evaluations
+
+(define (p) (p))
+
+(define (test x y)(if (= x 0) 0 y))
+
+(test 0 (p))
+
+;For normal order, infinite recursion
+;For applicative-order, 0
+

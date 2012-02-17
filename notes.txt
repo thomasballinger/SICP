@@ -1,0 +1,7 @@
+1.1.5
+-----
+* Evaluation method
+ * Normal order: Fully expand and then reduce
+ * Applicative-order: Evaluate the arguments and then apply
+
+
