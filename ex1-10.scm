@@ -1,0 +1,26 @@
+(define (Ackermann x y)
+  (cond ((= y 0) 0)
+        ((= x 0) (* 2 y))
+        ((= y 1) 2)
+        (else (Ackermann (- x 1)
+                        (Ackermann x (- y 1))))))
+
+(Ackermann 0 1)
+(Ackermann 0 2)
+(Ackermann 0 3)
+(Ackermann 0 4)
+
+(Ackermann 1 1)
+(Ackermann 1 2)
+(Ackermann 1 3)
+(Ackermann 1 4)
+
+(Ackermann 2 1)
+(Ackermann 2 2)
+(Ackermann 2 3)
+(Ackermann 2 4)
+
+(Ackermann 2 1)
+(Ackermann 2 2)
+(Ackermann 2 3)
+(Ackermann 2 4)
