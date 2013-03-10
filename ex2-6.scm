@@ -38,3 +38,12 @@
 (three (lambda (n) (+ n 1)))
 ((three (lambda (n) (+ n 1))) 0)
 ((three (lambda (n) (+ n 1))) 39)
+
+(define (times c1 c2) (lambda (f) (c1 (c2 f))))
+; I accidentally wrote times instead... not sure how deep this is or how fair it is to call it times
+
+(define (plus c1 c2) (lambda (f) (lambda (x) ((c2 f) ((c1 f) x)) )))
+
+(define seven (plus (plus three two) two))
+((seven (lambda (n) (+ n 1))) 0)
+((seven (lambda (n) (+ n 1))) 8)

@@ -34,8 +34,9 @@ Again, another important section!
 - 2.1✓
 - 2.2✓ (untested)
 - 2.3✓ (untested)
-- 2.4
-- 2.6
+- 2.4✓
+- 2.5✓
+- 2.6✓
 - 2.7
 - 2.8
 - 2.9
